@@ -40,6 +40,10 @@ body {
     margin: 0;
 }
 
+.hidden{
+    display: none;
+}
+
 .navbar {
     margin-top: 15px;
     transform: rotate(-1deg);
