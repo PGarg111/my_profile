@@ -1,4 +1,5 @@
 :root {
+    --max-width: 900px;
     --bg: #ffffff;
     --muted: #9ca3af;
     --fg: #000000;
@@ -8,7 +9,7 @@
     font-weight: weight;
     font-style: normal;
     --hg: rgb(46, 183, 183);
-    --bg3: linear-gradient(to bottom, #82c9d0a9, #92aacf8f);
+    --bg3: linear-gradient(to bottom, #82c9d0a9, #4161928f);
     --line: #8492a6c0;
 
 }
@@ -18,8 +19,8 @@ body.dark-mode {
     --fg: #e6e6e6;
     --muted: #555;
     --bg2: #1f3540;
-    --hg: #80649a;
-    --bg3: linear-gradient(to bottom, #0b4e52a4, #3e13688f);
+    --hg: #64689a;
+    --bg3: linear-gradient(to bottom, #0f5f63a4, #0b16458f);
     --line: #53565bc0;
 
 }
@@ -40,26 +41,81 @@ body {
 }
 
 .navbar {
+    margin-top: 15px;
+    transform: rotate(-1deg);
     backdrop-filter: blur(10px);
-    background-color: none;
+    background-color: var(--bg);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     z-index: 1000;
     align-items: center;
     transition: transform .15s ease, box-shadow .15s ease;
+    transition:
+        transform 0.3s cubic-bezier(.25, .46, .45, .94),
+        box-shadow 0.3s cubic-bezier(.25, .46, .45, .94);
 }
 
-.navbar a {
+.navbar-button {
+    color: var(--fg);
+    font-family: Courier, monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background: var(--bg);
+    border: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-button a {
+    color: var(--fg);
     text-decoration: none;
     padding: 14px 20px;
     font-size: 14px;
 
 }
 
-.navbar a:hover {
+.navbar:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 10px 05px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(195, 192, 192, 0.81);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-button:hover {
+    background: rgba(105, 150, 232, 0.702);
     border-radius: 5px;
+    transform: scale(1.07);
+}
+
+.toggle_button {
+    width: 2%;
+    height: 2%;
+    cursor: pointer;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 5px;
+    border: none;
+    background: rgba(255, 255, 255, 0.763);
+}
+
+.toggle_button:hover{
+    transform: scale(1.05);
+    background: white;
+}
+
+.content{
+    display: block;
+    box-sizing: border-box;
+    max-width: var(--max-width);
+    margin: 0 auto 2rem;
+    padding: 1rem;
 }
