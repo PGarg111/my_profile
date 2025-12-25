@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --bgim: url(_.jpeg) no-repeat center / cover;
+    --bgim: url("_.jpeg") no-repeat center / cover;
     --max-width: 900px;
     --bg: #ffffff;
     --muted: #9ca3af;
