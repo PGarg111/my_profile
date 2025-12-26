@@ -98,9 +98,7 @@ function showError() {
             `;
 }
 
-// Initial fetch
 fetchNowPlaying();
 
-// Update every 30 seconds
 setInterval(fetchNowPlaying, 30000);
 
