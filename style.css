@@ -339,14 +339,19 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid currentColor;
-    animation: 
+    animation:
         blink_1 1s steps(1, end) infinite,
         typing 2s steps(63, end) forwards;
 }
 
 @keyframes typing {
-    0% { width: 0 }
-    100% {width: 63ch}
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 63ch
+    }
 }
 
 /* .type_4 {
@@ -370,7 +375,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid currentColor;
-    animation: 
+    animation:
         blink_1 1s steps(1, end) infinite,
         typing_2 1s steps(37, end) forwards;
     animation-delay: 4s;
@@ -378,8 +383,13 @@ footer {
 }
 
 @keyframes typing_2 {
-    0% {width: 0 }
-    100% {width: 37ch}
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 37ch
+    }
 }
 
 /* .type_5 {
@@ -402,7 +412,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid currentColor;
-    animation: 
+    animation:
         blink_1 1s steps(1, end) infinite,
         typing_3 1s steps(26, end) forwards;
     animation-delay: 7s;
@@ -410,8 +420,13 @@ footer {
 }
 
 @keyframes typing_3 {
-    0% { width: 0 }
-    100% {width: 26ch}
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 26ch
+    }
 }
 
 /* .type_6 {
@@ -435,7 +450,7 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     border-right: 2px solid currentColor;
-    animation: 
+    animation:
         blink_1 1s steps(1, end) infinite,
         typing_1 4s steps(99, end) forwards;
     animation-delay: 10s;
@@ -443,8 +458,13 @@ footer {
 }
 
 @keyframes typing_1 {
-    0% { width: 0 }
-    100% {width: 99ch}
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 99ch
+    }
 }
 
 /* .type_7 {
@@ -464,40 +484,79 @@ footer {
 } */
 
 @keyframes blink_1 {
-  0% {border-color: transparent}
-  50% {border-color: var(--fg);}
-  100% {border-color: transparent}
+    0% {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--fg);
+    }
+
+    100% {
+        border-color: transparent
+    }
 }
 
 .delay-text {
     opacity: 0;
-    animation: show 0s linear forwards;
+    animation: slide-in 0.8s ease-out forwards;
     animation-delay: 2s;
 }
 
+
 .delay-text_2 {
     opacity: 0;
-    animation: show 0s linear forwards;
+    animation: slide-in 0.8s ease-out forwards;
     animation-delay: 5s;
 }
 
 .delay-text_3 {
     opacity: 0;
-    animation: show 0s linear forwards;
+    animation: slide-in 0.8s ease-out forwards;
     animation-delay: 8s;
 }
 
 .delay-text_4 {
     opacity: 0;
-    animation: show 0s linear forwards;
+    animation: slide-in 0.8s ease-out forwards;
     animation-delay: 14s;
 }
 
-
-@keyframes show {
-    to {opacity: 1;}
+@keyframes slide-in {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
+.image {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.home-image {
+    width: 300%;
+    height: auto;
+    margin-top: 5px;
+    
+    animation: bouncing 3s ease-in-out infinite;
+}
+
+@keyframes bouncing {
+    0%, 100%{
+        transform: translateY(0);
+        filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.3));
+    }
+    50%{
+        transform: translateY(-30px);
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+    }
+}
 
 .music-widget {
     display: inline-block;
