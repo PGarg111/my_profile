@@ -179,3 +179,8 @@ closeBtn.addEventListener("click", () => {
 document.querySelectorAll(".skill-tech, .skill-tool, .skill-robotics").forEach(skill => {
     skill.addEventListener("click", () => showPopup(skill));
 });
+
+function set_title(titleName)
+{
+    document.title = titleName
+}
