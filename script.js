@@ -140,3 +140,8 @@ document.addEventListener('keydown', (e) => {
         });
     }
 });
+
+setTimeout(() => {
+    const overlay = document.getElementById('skipOverlay');
+    if (overlay) overlay.remove();
+}, 5000);

@@ -483,7 +483,6 @@ footer {
     width: 300%;
     height: auto;
     margin-top: 5px;
-    
     animation: bouncing 3s ease-in-out infinite;
 }
 
@@ -496,6 +495,22 @@ footer {
         transform: translateY(-30px);
         filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
     }
+}
+
+#skipOverlay {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);  
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    top: 350px;
+    left: 0;
+    right: 0;
+    color: var(--fg);
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    animation: bouncing 3s ease-out forwards;
 }
 
 .music-widget {
