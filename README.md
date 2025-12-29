@@ -17,4 +17,6 @@ The biggest difficulties that I had was making the site enjoyable for the user. 
 
 The pictures for the background of my website are from Pinterest: https://www.pinterest.com/pin/29132728835215685/, https://www.pinterest.com/pin/315181673944539427/
 
+It shows that someone else did the commits, but that was me. VS Code on my computer was signed into a different account before. 
+
 Link to my website: https://pgarg111.github.io/my_profile/
