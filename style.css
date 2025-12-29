@@ -3,7 +3,7 @@
 :root {
     --bgim: url("background4.jpeg") no-repeat center / cover;
     --max-width: 900px;
-    --bg: #ffffff;
+    --bg: #caf0f8;
     --muted: #9ca3af;
     --fg: #000000;
     --fg2: black;
@@ -21,7 +21,7 @@
 
 body.dark-mode {
     --bgim: url("background3.jpeg") no-repeat center / cover;
-    --bg: #111111;
+    --bg: #03045e;
     --fg: #ffffff;
     --fg2: white;
     --muted: #555;
@@ -499,7 +499,7 @@ footer {
 
 #skipOverlay {
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.3); 
+    background-color: #00b4d8; 
     backdrop-filter: blur(10px);  
     border: 3px solid rgba(255, 255, 255, 0.3);
     position: fixed;
