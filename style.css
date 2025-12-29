@@ -313,7 +313,7 @@ footer {
     transform: scale(1.07);
 }
 
-.skill-card {
+/* .skill-card {
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -334,7 +334,7 @@ footer {
 .home-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .type {
     overflow: hidden;
@@ -545,6 +545,66 @@ footer {
 .favicon-link:hover{
     transform: scale(1.8);
     text-decoration: underline;
+}
+
+.skill{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.skill-tech{
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    background: #48cae4b1;
+}
+
+.skill-tech:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.skill-tool{
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    background: #0096c7b1;
+}
+
+.skill-tool:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.skill-robotics{
+    padding: 12px 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    background: #023e8ab1;
+}
+
+.skill-robotics:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.highlight{
+    background: linear-gradient(#0077b6, #0077b6);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    animation: highlighted 1.5s ease-out 3s forwards;
+    padding: 2px 4px;
+}
+
+@keyframes highlighted {
+    to {
+        background-size: 100% 100%;
+        color: white;
+    }
 }
 
 .music-widget {
