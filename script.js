@@ -5,12 +5,6 @@ function toggleTheme() {
 function showPage(pageId) {
 
     const pages = document.querySelectorAll(".page");
-
-    // if (!pageId) {
-    //     const params = new URLSearchParams(window.location.search);
-    //     pageId = params.get("pageid");
-    // }
-
     pages.forEach(page => {
         if (page.id === pageId) {
             page.classList.remove("hidden");
