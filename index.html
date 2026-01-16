@@ -13,9 +13,7 @@
 <body>
 
     <nav class="navbar">
-        <div style=" margin-left: auto;">
-            <button style="align-items: left;"class="toggle_button" onclick="toggleTheme()">🌓</button>
-        </div>
+        
         <button class="navbar-button" onclick="showPage('home'); set_title('PG | Home')">Home</button>
         <button class="navbar-button" onclick="showPage('about'); set_title('PG | About Me')">About</button>
         <button class="navbar-button" onclick="showPage('projects'); set_title('PG | Projects')">Projects</button>
@@ -23,7 +21,9 @@
     </nav>
 
 
-    
+    <div style="margin-top:80px; margin-left: 10px;">
+        <button style="align-items: left;"class="toggle_button" onclick="toggleTheme()">🌓</button>
+    </div>
 
     <main class="content">
         <section id="home" class="page" style="animation: slide-in 0.8s ease-in-out forwards;">
