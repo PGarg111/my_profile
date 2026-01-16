@@ -2,7 +2,7 @@
 
 The project I have made is my personal website with a home page, an about page, a travel page, and a page with the projects I've made along with my skill set. There are many animations throughout my website. The homepage features my name, that I drew) animated to bounce, the about section with a typewriter effect, and the project section which has a highlighter animation to give attention to what I used to create my projects. The footer of my website is a wave animation showing how much I like learning about the ocean and how much it fascinates me. The entire website's theme was based upon this, I used the Ocean Blue Serenity color palette from https://coolors.co/palettes/trending. This website uses HTML, CSS, and Javascript. 
 
-The navigation bar uses fake Javascript transitions to move between the three pages.
+The navigation bar uses fake Javascript transitions to move between the four pages.
 When you navigate between the different pages, it changes the name in the display to that. This was done with Javascript. 
 
 I drew the art on the homepage and the favicon for the website using iArtbook. 
