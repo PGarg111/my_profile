@@ -1,5 +1,7 @@
 # my_profile
 ![Hackatime Badge](https://hackatime-badge.hackclub.com/U099LHP1QKF/flavortown_project1)
+![Hackatime Stats](https://github-readme-stats.hackclub.dev/api/wakatime?username=18355&api_domain=hackatime.hackclub.com&theme=darcula&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8)
+
 
 The project I have made is my personal website with a home page, an about page, a travel page, and a page with the projects I've made along with my skill set. There are many animations throughout my website. The homepage features my name, that I drew) animated to bounce, the about section with a typewriter effect, and the project section which has a highlighter animation to give attention to what I used to create my projects. The footer of my website is a wave animation showing how much I like learning about the ocean and how much it fascinates me. The entire website's theme was based upon this, I used the Ocean Blue Serenity color palette from https://coolors.co/palettes/trending. This website uses HTML, CSS, and Javascript. 
 
