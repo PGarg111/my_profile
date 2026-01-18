@@ -16,7 +16,6 @@
     --bg3: linear-gradient(to bottom, #82c9d0a9, #4161928f);
     --line: #8492a6c0;
     --a: rgb(24, 76, 104);
-
 }
 
 body.dark-mode {
@@ -116,7 +115,7 @@ body {
     padding-right: 10px;
     border-radius: 5px;
     border: none;
-    background: rgba(255, 255, 255, 0.763);
+    background: var(--fg2);
 }
 
 .toggle_button:hover {
@@ -687,7 +686,7 @@ footer {
     background: #00b4d83a;
     border: 3px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    border-radius: 15px;
+    border-radius: 30px;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
