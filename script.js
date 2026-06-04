@@ -103,24 +103,28 @@ document.addEventListener('keydown', (e) => {
     if (e.code === 'Space' && !animationsSkipped) {
         animationsSkipped = true;
 
-        const animatedElements = document.querySelectorAll('.type, .type_1, .type_2, .type_3, .type_4, .delay-text, .delay-text_2, .delay-text_3, .delay-text_4, .delay-text_5');
+        const animatedElements = document.querySelectorAll('.type, .type_1, .type_2, .type_3, .type_4, .type_5,.delay-text, .delay-text_2, .delay-text_3, .delay-text_4, .delay-text_5, .delay-text_6');
 
         animatedElements.forEach(element => {
             if (element.classList.contains('type') ||
                 element.classList.contains('type_1') ||
                 element.classList.contains('type_2') ||
                 element.classList.contains('type_3') ||
-                element.classList.contains('type_4')) {
+                element.classList.contains('type_4') ||
+                element.classList.contains('type_5'))
+                {
 
                 if (element.classList.contains('type')) {
                     element.style.width = '63ch';
                 } else if (element.classList.contains('type_1')) {
-                    element.style.width = '99ch';
+                    element.style.width = '46ch';
                 } else if (element.classList.contains('type_2')) {
                     element.style.width = '37ch';
                 } else if (element.classList.contains('type_3')) {
                     element.style.width = '26ch';
                 } else if (element.classList.contains('type_4')) {
+                    element.style.width = '99ch';
+                } else if (element.classList.contains('type_5')) {
                     element.style.width = '100ch';
                 }
 
@@ -131,7 +135,8 @@ document.addEventListener('keydown', (e) => {
                 element.classList.contains('delay-text_2') ||
                 element.classList.contains('delay-text_3') ||
                 element.classList.contains('delay-text_4') ||
-                element.classList.contains('delay-text_5')) {
+                element.classList.contains('delay-text_5') ||
+                element.classList.contains('delay-text_6')) {
                 element.style.opacity = '1';
                 element.style.transform = 'translateX(0)';
                 element.style.animation = 'none';
