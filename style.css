@@ -309,7 +309,7 @@ footer {
 }
 
 .footer-links:hover {
-    text-decoration: underline;
+    text-decoration: underline wavy;
     transform: scale(1.07);
 }
 
@@ -438,7 +438,7 @@ footer {
     border-right: 2px solid currentColor;
     animation:
         blink_1 1s steps(1, end) infinite,
-        typing_1 4s steps(99, end) forwards;
+        typing_1 4s steps(100, end) forwards;
     animation-delay: 10s;
     animation-fill-mode: both;
 }
@@ -449,7 +449,7 @@ footer {
     }
 
     100% {
-        width: 99ch
+        width: 46ch
     }
 }
 
@@ -459,12 +459,33 @@ footer {
     border-right: 2px solid currentColor;
     animation:
         blink_1 1s steps(1, end) infinite,
-        typing_4 4s steps(100, end) forwards;
+        typing_4 4s steps(99, end) forwards;
     animation-delay: 15s;
     animation-fill-mode: both;
 }
 
 @keyframes typing_4 {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100ch
+    }
+}
+
+.type_5 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid currentColor;
+    animation:
+        blink_1 1s steps(1, end) infinite,
+        typing_4 4s steps(100, end) forwards;
+    animation-delay: 20s;
+    animation-fill-mode: both;
+}
+
+@keyframes typing_5 {
     0% {
         width: 0
     }
@@ -518,6 +539,12 @@ footer {
     opacity: 0;
     animation: slide-in 0.8s ease-out forwards;
     animation-delay: 19s;
+}
+
+.delay-text_6 {
+    opacity: 0;
+    animation: slide-in 0.8s ease-out forwards;
+    animation-delay: 24s;
 }
 
 @keyframes slide-in {
@@ -637,6 +664,16 @@ footer {
 .skill-robotics:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.fm-link {
+    text-decoration: underline dashed;
+    color: black;
+}
+
+.fm-link:hover {
+    text-decoration: underline wavy ;
+    color: var(--a);
 }
 
 .popup {
